@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,7 +18,6 @@
 		08E719CB233F983F00CDE075 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E719CA233F983F00CDE075 /* MainViewController.swift */; };
 		08E719D0233F984000CDE075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E719CF233F984000CDE075 /* Assets.xcassets */; };
 		08E719D3233F984000CDE075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E719D1233F984000CDE075 /* LaunchScreen.storyboard */; };
-		08E719DC233F9ADB00CDE075 /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 08E719DB233F9ADB00CDE075 /* FloatingPanel */; };
 		08E719E0233F9BEA00CDE075 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E719DF233F9BEA00CDE075 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08E719DC233F9ADB00CDE075 /* FloatingPanel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +142,6 @@
 			);
 			name = LabUI;
 			packageProductDependencies = (
-				08E719DB233F9ADB00CDE075 /* FloatingPanel */,
 			);
 			productName = LabUI;
 			productReference = 08E719C3233F983F00CDE075 /* LabUI.app */;
@@ -175,7 +172,6 @@
 			);
 			mainGroup = 08E719BA233F983F00CDE075;
 			packageReferences = (
-				08E719DA233F9ADB00CDE075 /* XCRemoteSwiftPackageReference "FloatingPanel" */,
 			);
 			productRefGroup = 08E719C4233F983F00CDE075 /* Products */;
 			projectDirPath = "";
@@ -402,25 +398,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		08E719DA233F9ADB00CDE075 /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SCENEE/FloatingPanel.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.6.6;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		08E719DB233F9ADB00CDE075 /* FloatingPanel */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 08E719DA233F9ADB00CDE075 /* XCRemoteSwiftPackageReference "FloatingPanel" */;
-			productName = FloatingPanel;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 08E719BB233F983F00CDE075 /* Project object */;
 }
