@@ -15,6 +15,10 @@ class MainNavigationViewController: UINavigationController {
         setup()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+
     func setup() {
         navigationBar.prefersLargeTitles = true
     }

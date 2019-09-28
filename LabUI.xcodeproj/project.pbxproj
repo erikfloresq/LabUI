@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081F2EF9233FC82200441649 /* CustomFloatingPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2EF8233FC82200441649 /* CustomFloatingPanelLayout.swift */; };
+		081F2EFB233FD3B000441649 /* FPContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 081F2EFA233FD3AF00441649 /* FPContentView.xib */; };
+		081F2EFD233FD3C200441649 /* FPContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2EFC233FD3C200441649 /* FPContentView.swift */; };
+		081F2F01233FDE0200441649 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2F00233FDE0200441649 /* MainView.swift */; };
+		081F2F03233FDE1200441649 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 081F2F02233FDE1200441649 /* MainView.xib */; };
+		081F2F07233FE7BC00441649 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2F05233FE7BC00441649 /* ModalViewController.swift */; };
+		081F2F08233FE7BC00441649 /* ModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 081F2F06233FE7BC00441649 /* ModalView.xib */; };
+		081F2F0A233FE7E600441649 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2F09233FE7E600441649 /* ModalView.swift */; };
+		081F2F0E233FF24000441649 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2F0C233FF24000441649 /* DetailViewController.swift */; };
+		081F2F0F233FF24000441649 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 081F2F0D233FF24000441649 /* DetailView.xib */; };
+		081F2F11233FF25600441649 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2F10233FF25600441649 /* DetailView.swift */; };
+		081F2F15233FFE9F00441649 /* OtherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2F13233FFE9F00441649 /* OtherDetailViewController.swift */; };
+		081F2F18233FFEBC00441649 /* OtherDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 081F2F17233FFEBC00441649 /* OtherDetailView.xib */; };
+		081F2F1A233FFEDE00441649 /* OtherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2F19233FFEDE00441649 /* OtherDetailView.swift */; };
 		08C4C6CC233FABAB00F8E3E0 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C6CB233FABAB00F8E3E0 /* MainNavigationViewController.swift */; };
 		08C4C6CE233FAC1A00F8E3E0 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C6CD233FAC1A00F8E3E0 /* MainTableViewController.swift */; };
 		08C4C6D3233FADA000F8E3E0 /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C6D1233FADA000F8E3E0 /* BasicTableViewCell.swift */; };
 		08C4C6D4233FADA000F8E3E0 /* BasicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C4C6D2233FADA000F8E3E0 /* BasicTableViewCell.xib */; };
 		08C4C6D8233FADC000F8E3E0 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C6D6233FADC000F8E3E0 /* CardTableViewCell.swift */; };
 		08C4C6D9233FADC000F8E3E0 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C4C6D7233FADC000F8E3E0 /* CardTableViewCell.xib */; };
+		08D97166233FC1FF006065B2 /* FPContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D97165233FC1FF006065B2 /* FPContentViewController.swift */; };
 		08E719C7233F983F00CDE075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E719C6233F983F00CDE075 /* AppDelegate.swift */; };
 		08E719C9233F983F00CDE075 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E719C8233F983F00CDE075 /* SceneDelegate.swift */; };
 		08E719CB233F983F00CDE075 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E719CA233F983F00CDE075 /* MainViewController.swift */; };
@@ -23,12 +38,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		081F2EF8233FC82200441649 /* CustomFloatingPanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFloatingPanelLayout.swift; sourceTree = "<group>"; };
+		081F2EFA233FD3AF00441649 /* FPContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FPContentView.xib; sourceTree = "<group>"; };
+		081F2EFC233FD3C200441649 /* FPContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPContentView.swift; sourceTree = "<group>"; };
+		081F2F00233FDE0200441649 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		081F2F02233FDE1200441649 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		081F2F05233FE7BC00441649 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		081F2F06233FE7BC00441649 /* ModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalView.xib; sourceTree = "<group>"; };
+		081F2F09233FE7E600441649 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		081F2F0C233FF24000441649 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		081F2F0D233FF24000441649 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		081F2F10233FF25600441649 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		081F2F13233FFE9F00441649 /* OtherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherDetailViewController.swift; sourceTree = "<group>"; };
+		081F2F17233FFEBC00441649 /* OtherDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherDetailView.xib; sourceTree = "<group>"; };
+		081F2F19233FFEDE00441649 /* OtherDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherDetailView.swift; sourceTree = "<group>"; };
 		08C4C6CB233FABAB00F8E3E0 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 		08C4C6CD233FAC1A00F8E3E0 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		08C4C6D1233FADA000F8E3E0 /* BasicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
 		08C4C6D2233FADA000F8E3E0 /* BasicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicTableViewCell.xib; sourceTree = "<group>"; };
 		08C4C6D6233FADC000F8E3E0 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		08C4C6D7233FADC000F8E3E0 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		08D97165233FC1FF006065B2 /* FPContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPContentViewController.swift; sourceTree = "<group>"; };
 		08E719C3233F983F00CDE075 /* LabUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LabUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E719C6233F983F00CDE075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08E719C8233F983F00CDE075 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +81,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		081F2EF7233FC7F900441649 /* FloatingPanelContent */ = {
+			isa = PBXGroup;
+			children = (
+				08D97165233FC1FF006065B2 /* FPContentViewController.swift */,
+				081F2EF8233FC82200441649 /* CustomFloatingPanelLayout.swift */,
+				081F2EFA233FD3AF00441649 /* FPContentView.xib */,
+				081F2EFC233FD3C200441649 /* FPContentView.swift */,
+			);
+			path = FloatingPanelContent;
+			sourceTree = "<group>";
+		};
+		081F2F04233FE79C00441649 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				081F2F05233FE7BC00441649 /* ModalViewController.swift */,
+				081F2F06233FE7BC00441649 /* ModalView.xib */,
+				081F2F09233FE7E600441649 /* ModalView.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		081F2F0B233FF21F00441649 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				081F2F0C233FF24000441649 /* DetailViewController.swift */,
+				081F2F0D233FF24000441649 /* DetailView.xib */,
+				081F2F10233FF25600441649 /* DetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		081F2F12233FFE7F00441649 /* OtherDetail */ = {
+			isa = PBXGroup;
+			children = (
+				081F2F13233FFE9F00441649 /* OtherDetailViewController.swift */,
+				081F2F17233FFEBC00441649 /* OtherDetailView.xib */,
+				081F2F19233FFEDE00441649 /* OtherDetailView.swift */,
+			);
+			path = OtherDetail;
+			sourceTree = "<group>";
+		};
 		08C4C6CF233FAD4B00F8E3E0 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +148,14 @@
 				08C4C6D7233FADC000F8E3E0 /* CardTableViewCell.xib */,
 			);
 			path = CardCell;
+			sourceTree = "<group>";
+		};
+		08D97167233FC2BE006065B2 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				08C4C6CB233FABAB00F8E3E0 /* MainNavigationViewController.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		08E719BA233F983F00CDE075 = {
@@ -111,9 +190,13 @@
 		08E719DD233F9BAF00CDE075 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				081F2F12233FFE7F00441649 /* OtherDetail */,
+				081F2F0B233FF21F00441649 /* Detail */,
+				081F2F04233FE79C00441649 /* Modal */,
+				081F2EF7233FC7F900441649 /* FloatingPanelContent */,
+				08D97167233FC2BE006065B2 /* Navigation */,
 				08C4C6CF233FAD4B00F8E3E0 /* TableView */,
 				08E719DE233F9BC400CDE075 /* Main */,
-				08C4C6CB233FABAB00F8E3E0 /* MainNavigationViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,6 +206,8 @@
 			children = (
 				08E719CA233F983F00CDE075 /* MainViewController.swift */,
 				08E719DF233F9BEA00CDE075 /* MainViewModel.swift */,
+				081F2F00233FDE0200441649 /* MainView.swift */,
+				081F2F02233FDE1200441649 /* MainView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -192,7 +277,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				08C4C6D4233FADA000F8E3E0 /* BasicTableViewCell.xib in Resources */,
+				081F2F08233FE7BC00441649 /* ModalView.xib in Resources */,
+				081F2EFB233FD3B000441649 /* FPContentView.xib in Resources */,
+				081F2F0F233FF24000441649 /* DetailView.xib in Resources */,
+				081F2F18233FFEBC00441649 /* OtherDetailView.xib in Resources */,
 				08E719D3233F984000CDE075 /* LaunchScreen.storyboard in Resources */,
+				081F2F03233FDE1200441649 /* MainView.xib in Resources */,
 				08E719D0233F984000CDE075 /* Assets.xcassets in Resources */,
 				08C4C6D9233FADC000F8E3E0 /* CardTableViewCell.xib in Resources */,
 			);
@@ -206,11 +296,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				08C4C6CC233FABAB00F8E3E0 /* MainNavigationViewController.swift in Sources */,
+				081F2F01233FDE0200441649 /* MainView.swift in Sources */,
+				081F2EF9233FC82200441649 /* CustomFloatingPanelLayout.swift in Sources */,
 				08E719CB233F983F00CDE075 /* MainViewController.swift in Sources */,
+				081F2F0A233FE7E600441649 /* ModalView.swift in Sources */,
 				08E719C7233F983F00CDE075 /* AppDelegate.swift in Sources */,
 				08E719C9233F983F00CDE075 /* SceneDelegate.swift in Sources */,
+				08D97166233FC1FF006065B2 /* FPContentViewController.swift in Sources */,
+				081F2EFD233FD3C200441649 /* FPContentView.swift in Sources */,
+				081F2F11233FF25600441649 /* DetailView.swift in Sources */,
+				081F2F15233FFE9F00441649 /* OtherDetailViewController.swift in Sources */,
 				08C4C6CE233FAC1A00F8E3E0 /* MainTableViewController.swift in Sources */,
+				081F2F07233FE7BC00441649 /* ModalViewController.swift in Sources */,
 				08E719E0233F9BEA00CDE075 /* MainViewModel.swift in Sources */,
+				081F2F1A233FFEDE00441649 /* OtherDetailView.swift in Sources */,
+				081F2F0E233FF24000441649 /* DetailViewController.swift in Sources */,
 				08C4C6D3233FADA000F8E3E0 /* BasicTableViewCell.swift in Sources */,
 				08C4C6D8233FADC000F8E3E0 /* CardTableViewCell.swift in Sources */,
 			);
