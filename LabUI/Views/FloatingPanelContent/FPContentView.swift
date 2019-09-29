@@ -7,18 +7,11 @@
 //
 
 import UIKit
+import Please
 
-class FPContentView: UIView {
+class FPContentView: UIView, NibLoadable {
 
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var demoTableView: DemoTableView!
-
-    static func loadNib() -> FPContentView? {
-        let fpContentNib = UINib(nibName: "FPContentView", bundle: nil).instantiate(withOwner: self, options: nil).first
-        guard let fpContentView = fpContentNib as? FPContentView else {
-            return nil
-        }
-        return fpContentView
-    }
 
 }

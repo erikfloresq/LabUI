@@ -10,7 +10,7 @@ import UIKit
 
 class OtherDetailViewController: UIViewController {
 
-    let otherDetailView: OtherDetailView = OtherDetailView.loadNib()!
+    let otherDetailView: OtherDetailView = OtherDetailView.loadFromNib()!
 
     override func viewDidLoad() {
         super.viewDidLoad()

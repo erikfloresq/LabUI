@@ -10,7 +10,7 @@ import UIKit
 
 class ModalViewController: UIViewController {
 
-    let modalView: ModalView = ModalView.loadNib()!
+    let modalView: ModalView = ModalView.loadFromNib()!
 
     override func viewDidLoad() {
         super.viewDidLoad()

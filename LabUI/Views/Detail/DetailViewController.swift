@@ -10,7 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    let detailView: DetailView = DetailView.loadNib()!
+    let detailView: DetailView = DetailView.loadFromNib()!
 
     override func viewDidLoad() {
         super.viewDidLoad()

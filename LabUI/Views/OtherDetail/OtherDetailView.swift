@@ -7,15 +7,9 @@
 //
 
 import UIKit
+import Please
 
-class OtherDetailView: UIView {
+class OtherDetailView: UIView, NibLoadable {
 
-    static func loadNib() -> OtherDetailView? {
-        let otherDetailNib = UINib(nibName: "OtherDetailView", bundle: nil).instantiate(withOwner: self, options: nil).first
-        guard let otherDetailView = otherDetailNib as? OtherDetailView else {
-            return nil
-        }
-        return otherDetailView
-    }
 
 }

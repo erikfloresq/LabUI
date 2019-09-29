@@ -10,7 +10,7 @@ import UIKit
 
 class FPContentViewController: UIViewController {
 
-    let fpContentView: FPContentView = FPContentView.loadNib()!
+    let fpContentView: FPContentView = FPContentView.loadFromNib()!
 
     override func viewDidLoad() {
         super.viewDidLoad()

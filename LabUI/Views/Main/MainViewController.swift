@@ -11,7 +11,7 @@ import FloatingPanel
 
 class MainViewController: UIViewController {
 
-    let mainView: MainView = MainView.loadNib()!
+    let mainView: MainView = MainView.loadFromNib()!
     lazy var floatingPanel: FloatingPanelController = {
         let floatingPanel = FloatingPanelController()
         let fpContentViewController = FPContentViewController()

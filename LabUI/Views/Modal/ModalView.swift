@@ -7,15 +7,8 @@
 //
 
 import UIKit
+import Please
 
-class ModalView: UIView {
-
-    static func loadNib() -> ModalView? {
-        let modalNib = UINib(nibName: "ModalView", bundle: nil).instantiate(withOwner: self, options: nil).first
-        guard let modalView = modalNib as? ModalView else {
-            return nil
-        }
-        return modalView
-    }
+class ModalView: UIView, NibLoadable {
 
 }

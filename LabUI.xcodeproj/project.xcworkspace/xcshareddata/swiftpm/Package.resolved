@@ -9,6 +9,15 @@
           "revision": "0461c49d234f611f2e8ba3fc1c490cc1d0ca22bb",
           "version": "1.6.6"
         }
+      },
+      {
+        "package": "Please",
+        "repositoryURL": "https://github.com/erikfloresq/Please.git",
+        "state": {
+          "branch": null,
+          "revision": "89e7fef70ec964e161b2ef291882c550686bc890",
+          "version": "0.0.4"
+        }
       }
     ]
   },
