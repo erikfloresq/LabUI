@@ -3,12 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081F2F20234022D700441649 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2F1F234022D700441649 /* MainView.swift */; };
+		081F2F22234022E300441649 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 081F2F21234022E300441649 /* MainView.xib */; };
+		0863D850234047080063B7A8 /* Please in Frameworks */ = {isa = PBXBuildFile; productRef = 0863D84F234047080063B7A8 /* Please */; };
 		08C4C6CC233FABAB00F8E3E0 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C6CB233FABAB00F8E3E0 /* MainNavigationViewController.swift */; };
-		08C4C6CE233FAC1A00F8E3E0 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C6CD233FAC1A00F8E3E0 /* MainTableViewController.swift */; };
+		08C4C6CE233FAC1A00F8E3E0 /* DemoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C6CD233FAC1A00F8E3E0 /* DemoTableView.swift */; };
 		08C4C6D3233FADA000F8E3E0 /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C6D1233FADA000F8E3E0 /* BasicTableViewCell.swift */; };
 		08C4C6D4233FADA000F8E3E0 /* BasicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C4C6D2233FADA000F8E3E0 /* BasicTableViewCell.xib */; };
 		08C4C6D8233FADC000F8E3E0 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C6D6233FADC000F8E3E0 /* CardTableViewCell.swift */; };
@@ -22,8 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		081F2F1F234022D700441649 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		081F2F21234022E300441649 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		08C4C6CB233FABAB00F8E3E0 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
-		08C4C6CD233FAC1A00F8E3E0 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		08C4C6CD233FAC1A00F8E3E0 /* DemoTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableView.swift; sourceTree = "<group>"; };
 		08C4C6D1233FADA000F8E3E0 /* BasicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
 		08C4C6D2233FADA000F8E3E0 /* BasicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicTableViewCell.xib; sourceTree = "<group>"; };
 		08C4C6D6233FADC000F8E3E0 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
@@ -43,18 +48,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0863D850234047080063B7A8 /* Please in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		081F2F2423402CAF00441649 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		08C4C6CF233FAD4B00F8E3E0 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
 				08C4C6D5233FADA900F8E3E0 /* CardCell */,
 				08C4C6D0233FAD5500F8E3E0 /* BasicCell */,
-				08C4C6CD233FAC1A00F8E3E0 /* MainTableViewController.swift */,
+				08C4C6CD233FAC1A00F8E3E0 /* DemoTableView.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -82,6 +95,7 @@
 			children = (
 				08E719C5233F983F00CDE075 /* LabUI */,
 				08E719C4233F983F00CDE075 /* Products */,
+				081F2F2423402CAF00441649 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,9 +123,9 @@
 		08E719DD233F9BAF00CDE075 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				08C4C6CB233FABAB00F8E3E0 /* MainNavigationViewController.swift */,
 				08C4C6CF233FAD4B00F8E3E0 /* TableView */,
 				08E719DE233F9BC400CDE075 /* Main */,
-				08C4C6CB233FABAB00F8E3E0 /* MainNavigationViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,6 +135,8 @@
 			children = (
 				08E719CA233F983F00CDE075 /* MainViewController.swift */,
 				08E719DF233F9BEA00CDE075 /* MainViewModel.swift */,
+				081F2F1F234022D700441649 /* MainView.swift */,
+				081F2F21234022E300441649 /* MainView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -142,6 +158,7 @@
 			);
 			name = LabUI;
 			packageProductDependencies = (
+				0863D84F234047080063B7A8 /* Please */,
 			);
 			productName = LabUI;
 			productReference = 08E719C3233F983F00CDE075 /* LabUI.app */;
@@ -172,6 +189,7 @@
 			);
 			mainGroup = 08E719BA233F983F00CDE075;
 			packageReferences = (
+				0863D84E234047080063B7A8 /* XCRemoteSwiftPackageReference "Please" */,
 			);
 			productRefGroup = 08E719C4233F983F00CDE075 /* Products */;
 			projectDirPath = "";
@@ -191,6 +209,7 @@
 				08E719D3233F984000CDE075 /* LaunchScreen.storyboard in Resources */,
 				08E719D0233F984000CDE075 /* Assets.xcassets in Resources */,
 				08C4C6D9233FADC000F8E3E0 /* CardTableViewCell.xib in Resources */,
+				081F2F22234022E300441649 /* MainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,10 +221,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				08C4C6CC233FABAB00F8E3E0 /* MainNavigationViewController.swift in Sources */,
+				081F2F20234022D700441649 /* MainView.swift in Sources */,
 				08E719CB233F983F00CDE075 /* MainViewController.swift in Sources */,
 				08E719C7233F983F00CDE075 /* AppDelegate.swift in Sources */,
 				08E719C9233F983F00CDE075 /* SceneDelegate.swift in Sources */,
-				08C4C6CE233FAC1A00F8E3E0 /* MainTableViewController.swift in Sources */,
+				08C4C6CE233FAC1A00F8E3E0 /* DemoTableView.swift in Sources */,
 				08E719E0233F9BEA00CDE075 /* MainViewModel.swift in Sources */,
 				08C4C6D3233FADA000F8E3E0 /* BasicTableViewCell.swift in Sources */,
 				08C4C6D8233FADC000F8E3E0 /* CardTableViewCell.swift in Sources */,
@@ -398,6 +418,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0863D84E234047080063B7A8 /* XCRemoteSwiftPackageReference "Please" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/erikfloresq/Please";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0863D84F234047080063B7A8 /* Please */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0863D84E234047080063B7A8 /* XCRemoteSwiftPackageReference "Please" */;
+			productName = Please;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 08E719BB233F983F00CDE075 /* Project object */;
 }

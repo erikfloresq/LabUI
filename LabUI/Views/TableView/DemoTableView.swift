@@ -10,10 +10,6 @@ import UIKit
 
 class DemoTableView: UITableView {
 
-    override func draw(_ rect: CGRect) {
-
-    }
-
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         setup()
@@ -34,5 +30,7 @@ class DemoTableView: UITableView {
         let cardCell = UINib(nibName: "CardTableViewCell", bundle: nil)
         register(cardCell, forCellReuseIdentifier: "CardTableViewCell")
     }
+
+
 
 }

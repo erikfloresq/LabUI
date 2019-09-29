@@ -10,11 +10,7 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    lazy var demoTableView: DemoTableView = {
-        let tableView = DemoTableView()
-        tableView.dataSource = self
-        return tableView
-    }()
+    let mainView: MainView = MainView.loadFormNib()!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +18,12 @@ class MainViewController: UIViewController {
     }
 
     override func loadView() {
-        view = demoTableView
+        view = mainView
     }
 
     func setup() {
         title = "Demo"
+        mainView.demoTableView.dataSource = self
     }
 
 }
