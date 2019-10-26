@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0813D4D423626ECA005CD795 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4D223626ECA005CD795 /* CollectionTableViewCell.swift */; };
+		0813D4D523626ECA005CD795 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0813D4D323626ECA005CD795 /* CollectionTableViewCell.xib */; };
+		0813D4D823626F42005CD795 /* DemoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4D723626F42005CD795 /* DemoCollectionView.swift */; };
+		0813D4DC23626FB1005CD795 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4DA23626FB1005CD795 /* ItemCollectionViewCell.swift */; };
+		0813D4DD23626FB1005CD795 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0813D4DB23626FB1005CD795 /* ItemCollectionViewCell.xib */; };
 		081F2F20234022D700441649 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2F1F234022D700441649 /* MainView.swift */; };
 		081F2F22234022E300441649 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 081F2F21234022E300441649 /* MainView.xib */; };
 		0863D850234047080063B7A8 /* Please in Frameworks */ = {isa = PBXBuildFile; productRef = 0863D84F234047080063B7A8 /* Please */; };
@@ -22,9 +27,16 @@
 		08E719D0233F984000CDE075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E719CF233F984000CDE075 /* Assets.xcassets */; };
 		08E719D3233F984000CDE075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E719D1233F984000CDE075 /* LaunchScreen.storyboard */; };
 		08E719E0233F9BEA00CDE075 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E719DF233F9BEA00CDE075 /* MainViewModel.swift */; };
+		08F5A8492362F47600A9258F /* DemoHeaderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F5A8482362F47600A9258F /* DemoHeaderTableView.swift */; };
+		08F5A84B2362F48400A9258F /* DemoHeaderTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08F5A84A2362F48400A9258F /* DemoHeaderTableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0813D4D223626ECA005CD795 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		0813D4D323626ECA005CD795 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
+		0813D4D723626F42005CD795 /* DemoCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCollectionView.swift; sourceTree = "<group>"; };
+		0813D4DA23626FB1005CD795 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		0813D4DB23626FB1005CD795 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		081F2F1F234022D700441649 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		081F2F21234022E300441649 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		08C4C6CB233FABAB00F8E3E0 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +53,8 @@
 		08E719D2233F984000CDE075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08E719D4233F984000CDE075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08E719DF233F9BEA00CDE075 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		08F5A8482362F47600A9258F /* DemoHeaderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoHeaderTableView.swift; sourceTree = "<group>"; };
+		08F5A84A2362F48400A9258F /* DemoHeaderTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoHeaderTableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0813D4D123626EA9005CD795 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				0813D4D223626ECA005CD795 /* CollectionTableViewCell.swift */,
+				0813D4D323626ECA005CD795 /* CollectionTableViewCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		0813D4D623626F04005CD795 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				0813D4D923626F89005CD795 /* ItemCollectionViewCell */,
+				0813D4D723626F42005CD795 /* DemoCollectionView.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		0813D4D923626F89005CD795 /* ItemCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0813D4DA23626FB1005CD795 /* ItemCollectionViewCell.swift */,
+				0813D4DB23626FB1005CD795 /* ItemCollectionViewCell.xib */,
+			);
+			path = ItemCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		081F2F2423402CAF00441649 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +106,7 @@
 		08C4C6CF233FAD4B00F8E3E0 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				0813D4D123626EA9005CD795 /* CollectionCell */,
 				08C4C6D5233FADA900F8E3E0 /* CardCell */,
 				08C4C6D0233FAD5500F8E3E0 /* BasicCell */,
 				08C4C6CD233FAC1A00F8E3E0 /* DemoTableView.swift */,
@@ -123,7 +165,9 @@
 		08E719DD233F9BAF00CDE075 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				08F5A8472362F44B00A9258F /* HeaderView */,
 				08C4C6CB233FABAB00F8E3E0 /* MainNavigationViewController.swift */,
+				0813D4D623626F04005CD795 /* CollectionView */,
 				08C4C6CF233FAD4B00F8E3E0 /* TableView */,
 				08E719DE233F9BC400CDE075 /* Main */,
 			);
@@ -139,6 +183,15 @@
 				081F2F21234022E300441649 /* MainView.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		08F5A8472362F44B00A9258F /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				08F5A8482362F47600A9258F /* DemoHeaderTableView.swift */,
+				08F5A84A2362F48400A9258F /* DemoHeaderTableView.xib */,
+			);
+			path = HeaderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +259,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				08C4C6D4233FADA000F8E3E0 /* BasicTableViewCell.xib in Resources */,
+				08F5A84B2362F48400A9258F /* DemoHeaderTableView.xib in Resources */,
+				0813D4D523626ECA005CD795 /* CollectionTableViewCell.xib in Resources */,
 				08E719D3233F984000CDE075 /* LaunchScreen.storyboard in Resources */,
+				0813D4DD23626FB1005CD795 /* ItemCollectionViewCell.xib in Resources */,
 				08E719D0233F984000CDE075 /* Assets.xcassets in Resources */,
 				08C4C6D9233FADC000F8E3E0 /* CardTableViewCell.xib in Resources */,
 				081F2F22234022E300441649 /* MainView.xib in Resources */,
@@ -221,12 +277,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				08C4C6CC233FABAB00F8E3E0 /* MainNavigationViewController.swift in Sources */,
+				08F5A8492362F47600A9258F /* DemoHeaderTableView.swift in Sources */,
+				0813D4D823626F42005CD795 /* DemoCollectionView.swift in Sources */,
 				081F2F20234022D700441649 /* MainView.swift in Sources */,
 				08E719CB233F983F00CDE075 /* MainViewController.swift in Sources */,
 				08E719C7233F983F00CDE075 /* AppDelegate.swift in Sources */,
 				08E719C9233F983F00CDE075 /* SceneDelegate.swift in Sources */,
+				0813D4D423626ECA005CD795 /* CollectionTableViewCell.swift in Sources */,
 				08C4C6CE233FAC1A00F8E3E0 /* DemoTableView.swift in Sources */,
 				08E719E0233F9BEA00CDE075 /* MainViewModel.swift in Sources */,
+				0813D4DC23626FB1005CD795 /* ItemCollectionViewCell.swift in Sources */,
 				08C4C6D3233FADA000F8E3E0 /* BasicTableViewCell.swift in Sources */,
 				08C4C6D8233FADC000F8E3E0 /* CardTableViewCell.swift in Sources */,
 			);

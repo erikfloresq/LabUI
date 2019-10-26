@@ -29,6 +29,8 @@ class DemoTableView: UITableView {
         register(basicCell, forCellReuseIdentifier: "BasicTableViewCell")
         let cardCell = UINib(nibName: "CardTableViewCell", bundle: nil)
         register(cardCell, forCellReuseIdentifier: "CardTableViewCell")
+        let collectionCell = UINib(nibName: "CollectionTableViewCell", bundle: nil)
+        register(collectionCell, forCellReuseIdentifier: "CollectionTableViewCell")
     }
 
 
