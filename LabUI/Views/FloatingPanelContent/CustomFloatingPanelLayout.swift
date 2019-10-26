@@ -22,13 +22,13 @@ class CustomFloatingPanelLayout: FloatingPanelLayout {
     public func insetFor(position: FloatingPanelPosition) -> CGFloat? {
         switch position {
             case .half: return 516.0
-            case .tip: return 70.0
+            case .tip: return 80.0
             default: return nil
         }
     }
 
     func backdropAlphaFor(position: FloatingPanelPosition) -> CGFloat {
-        return position == .half ? 0.3 : 0.0
+        return position == .half ? 0.5 : 0.0
     }
 
 

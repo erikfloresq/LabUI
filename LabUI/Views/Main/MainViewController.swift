@@ -18,6 +18,8 @@ class MainViewController: UIViewController {
         floatingPanel.set(contentViewController: fpContentViewController)
         floatingPanel.track(scrollView: fpContentViewController.fpContentView.demoTableView)
         floatingPanel.surfaceView.cornerRadius = 9
+        let dissmisTap = UITapGestureRecognizer(target: self, action: #selector(dissmissTap))
+        floatingPanel.backdropView.gestureRecognizers = [dissmisTap]
         floatingPanel.delegate = self
         return floatingPanel
     }()
@@ -29,11 +31,18 @@ class MainViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        customAddPanel()
+        DispatchQueue.main.asyncAfter(deadline: .now()+3) {
+            //self.customAddPanel()
+            self.customAddPanelNavigation()
+        }
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
     }
 
     override func loadView() {
@@ -41,10 +50,12 @@ class MainViewController: UIViewController {
     }
 
     func setup() {
-        title = "Demo"
+        title = "Fotos"
         mainView.demoTableView.dataSource = self
+        mainView.demoTableView.delegate = self
         let modalButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showModal))
         navigationItem.rightBarButtonItem = modalButton
+        mainView.demoTableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 70))
     }
 
     func customAddPanel() {
@@ -55,6 +66,26 @@ class MainViewController: UIViewController {
              self.didMove(toParent: self)
          }
      }
+
+    func customAddPanelNavigation() {
+        guard let navigation = self.navigationController else {
+            return
+        }
+        navigation.view.addSubview(floatingPanel.view)
+        floatingPanel.view.frame = navigation.view.bounds
+        navigation.addChild(floatingPanel)
+        floatingPanel.show(animated: true) {
+            self.didMove(toParent: navigation)
+        }
+    }
+
+    func customRemovePanelNavigation() {
+        floatingPanel.hide(animated: true) {
+            self.floatingPanel.willMove(toParent: nil)
+            self.floatingPanel.view.removeFromSuperview()
+            self.floatingPanel.removeFromParent()
+        }
+    }
 
 }
 
@@ -70,6 +101,10 @@ extension MainViewController {
         let modalNavigation = UINavigationController(rootViewController: ModalViewController())
         present(modalNavigation, animated: true, completion: nil)
     }
+
+    func dissmissTap() {
+        floatingPanel.move(to: .tip, animated: true)
+    }
 }
 
 extension MainViewController: UITableViewDataSource {
@@ -78,8 +113,21 @@ extension MainViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BasicTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CardTableViewCell", for: indexPath)
         return cell
+    }
+}
+
+extension MainViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 160
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        customRemovePanelNavigation()
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
+            self.navigationController?.show(DetailViewController(), sender: nil)
+        }
     }
 }
 

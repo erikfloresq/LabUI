@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/SCENEE/FloatingPanel.git",
         "state": {
           "branch": null,
-          "revision": "0461c49d234f611f2e8ba3fc1c490cc1d0ca22bb",
-          "version": "1.6.6"
+          "revision": "8fd134512fa66ad3f711965a1d798610c1f6c7cd",
+          "version": "1.7.0"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/erikfloresq/Please.git",
         "state": {
           "branch": null,
-          "revision": "89e7fef70ec964e161b2ef291882c550686bc890",
-          "version": "0.0.4"
+          "revision": "e92eb7d0e28dda96f50e8ef1cca7357fabdf0675",
+          "version": "0.0.5"
         }
       }
     ]
