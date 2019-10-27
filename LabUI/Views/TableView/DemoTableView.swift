@@ -33,6 +33,4 @@ class DemoTableView: UITableView {
         register(collectionCell, forCellReuseIdentifier: "CollectionTableViewCell")
     }
 
-
-
 }

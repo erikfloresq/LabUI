@@ -10,7 +10,7 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    let mainView: MainView = MainView.loadFormNib()!
+    let mainView: MainView = MainView.loadFromNib()!
 
     override func viewDidLoad() {
         super.viewDidLoad()
