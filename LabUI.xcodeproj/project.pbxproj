@@ -23,7 +23,7 @@
 		081F2F1A233FFEDE00441649 /* OtherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2F19233FFEDE00441649 /* OtherDetailView.swift */; };
 		0865FD052340D1B2009C1A03 /* Please in Frameworks */ = {isa = PBXBuildFile; productRef = 0865FD042340D1B2009C1A03 /* Please */; };
 		08C4C6CC233FABAB00F8E3E0 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C6CB233FABAB00F8E3E0 /* MainNavigationViewController.swift */; };
-		08C4C6CE233FAC1A00F8E3E0 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C6CD233FAC1A00F8E3E0 /* MainTableViewController.swift */; };
+		08C4C6CE233FAC1A00F8E3E0 /* DemoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C6CD233FAC1A00F8E3E0 /* DemoTableView.swift */; };
 		08C4C6D3233FADA000F8E3E0 /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C6D1233FADA000F8E3E0 /* BasicTableViewCell.swift */; };
 		08C4C6D4233FADA000F8E3E0 /* BasicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C4C6D2233FADA000F8E3E0 /* BasicTableViewCell.xib */; };
 		08C4C6D8233FADC000F8E3E0 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C6D6233FADC000F8E3E0 /* CardTableViewCell.swift */; };
@@ -34,7 +34,6 @@
 		08E719CB233F983F00CDE075 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E719CA233F983F00CDE075 /* MainViewController.swift */; };
 		08E719D0233F984000CDE075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E719CF233F984000CDE075 /* Assets.xcassets */; };
 		08E719D3233F984000CDE075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E719D1233F984000CDE075 /* LaunchScreen.storyboard */; };
-		08E719DC233F9ADB00CDE075 /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 08E719DB233F9ADB00CDE075 /* FloatingPanel */; };
 		08E719E0233F9BEA00CDE075 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E719DF233F9BEA00CDE075 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +53,7 @@
 		081F2F17233FFEBC00441649 /* OtherDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherDetailView.xib; sourceTree = "<group>"; };
 		081F2F19233FFEDE00441649 /* OtherDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherDetailView.swift; sourceTree = "<group>"; };
 		08C4C6CB233FABAB00F8E3E0 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
-		08C4C6CD233FAC1A00F8E3E0 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		08C4C6CD233FAC1A00F8E3E0 /* DemoTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableView.swift; sourceTree = "<group>"; };
 		08C4C6D1233FADA000F8E3E0 /* BasicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
 		08C4C6D2233FADA000F8E3E0 /* BasicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicTableViewCell.xib; sourceTree = "<group>"; };
 		08C4C6D6233FADC000F8E3E0 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
@@ -129,7 +128,7 @@
 			children = (
 				08C4C6D5233FADA900F8E3E0 /* CardCell */,
 				08C4C6D0233FAD5500F8E3E0 /* BasicCell */,
-				08C4C6CD233FAC1A00F8E3E0 /* MainTableViewController.swift */,
+				08C4C6CD233FAC1A00F8E3E0 /* DemoTableView.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -165,6 +164,7 @@
 			children = (
 				08E719C5233F983F00CDE075 /* LabUI */,
 				08E719C4233F983F00CDE075 /* Products */,
+				081F2F2423402CAF00441649 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,6 +224,8 @@
 				08E719BF233F983F00CDE075 /* Sources */,
 				08E719C0233F983F00CDE075 /* Frameworks */,
 				08E719C1233F983F00CDE075 /* Resources */,
+				08F5A8612365FFF400A9258F /* SwiftLint with Autocorrections */,
+				08F5A862236600F900A9258F /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -289,10 +291,50 @@
 				081F2F03233FDE1200441649 /* MainView.xib in Resources */,
 				08E719D0233F984000CDE075 /* Assets.xcassets in Resources */,
 				08C4C6D9233FADC000F8E3E0 /* CardTableViewCell.xib in Resources */,
+				081F2F22234022E300441649 /* MainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08F5A8612365FFF400A9258F /* SwiftLint with Autocorrections */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint with Autocorrections";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/scripts/WarningsValidations\"\n";
+		};
+		08F5A862236600F900A9258F /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08E719BF233F983F00CDE075 /* Sources */ = {
@@ -520,10 +562,10 @@
 		};
 		08E719DA233F9ADB00CDE075 /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SCENEE/FloatingPanel.git";
+			repositoryURL = "https://github.com/erikfloresq/Please";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.6.6;
+				minimumVersion = 0.0.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -536,8 +578,8 @@
 		};
 		08E719DB233F9ADB00CDE075 /* FloatingPanel */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 08E719DA233F9ADB00CDE075 /* XCRemoteSwiftPackageReference "FloatingPanel" */;
-			productName = FloatingPanel;
+			package = 0863D84E234047080063B7A8 /* XCRemoteSwiftPackageReference "Please" */;
+			productName = Please;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
