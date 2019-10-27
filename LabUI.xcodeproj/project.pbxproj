@@ -21,6 +21,8 @@
 		081F2F15233FFE9F00441649 /* OtherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2F13233FFE9F00441649 /* OtherDetailViewController.swift */; };
 		081F2F18233FFEBC00441649 /* OtherDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 081F2F17233FFEBC00441649 /* OtherDetailView.xib */; };
 		081F2F1A233FFEDE00441649 /* OtherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2F19233FFEDE00441649 /* OtherDetailView.swift */; };
+		084E66CF236603A4002CD72D /* Please in Frameworks */ = {isa = PBXBuildFile; productRef = 08E719DB233F9ADB00CDE075 /* Please */; };
+		084E66D2236603D2002CD72D /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 084E66D1236603D2002CD72D /* FloatingPanel */; };
 		0865FD052340D1B2009C1A03 /* Please in Frameworks */ = {isa = PBXBuildFile; productRef = 0865FD042340D1B2009C1A03 /* Please */; };
 		08C4C6CC233FABAB00F8E3E0 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C6CB233FABAB00F8E3E0 /* MainNavigationViewController.swift */; };
 		08C4C6CE233FAC1A00F8E3E0 /* DemoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C6CD233FAC1A00F8E3E0 /* DemoTableView.swift */; };
@@ -74,8 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				084E66D2236603D2002CD72D /* FloatingPanel in Frameworks */,
+				084E66CF236603A4002CD72D /* Please in Frameworks */,
 				0865FD052340D1B2009C1A03 /* Please in Frameworks */,
-				08E719DC233F9ADB00CDE075 /* FloatingPanel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +167,6 @@
 			children = (
 				08E719C5233F983F00CDE075 /* LabUI */,
 				08E719C4233F983F00CDE075 /* Products */,
-				081F2F2423402CAF00441649 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,8 +235,9 @@
 			);
 			name = LabUI;
 			packageProductDependencies = (
-				08E719DB233F9ADB00CDE075 /* FloatingPanel */,
+				08E719DB233F9ADB00CDE075 /* Please */,
 				0865FD042340D1B2009C1A03 /* Please */,
+				084E66D1236603D2002CD72D /* FloatingPanel */,
 			);
 			productName = LabUI;
 			productReference = 08E719C3233F983F00CDE075 /* LabUI.app */;
@@ -265,8 +268,8 @@
 			);
 			mainGroup = 08E719BA233F983F00CDE075;
 			packageReferences = (
-				08E719DA233F9ADB00CDE075 /* XCRemoteSwiftPackageReference "FloatingPanel" */,
 				0865FD032340D1B2009C1A03 /* XCRemoteSwiftPackageReference "Please" */,
+				084E66D0236603D2002CD72D /* XCRemoteSwiftPackageReference "FloatingPanel" */,
 			);
 			productRefGroup = 08E719C4233F983F00CDE075 /* Products */;
 			projectDirPath = "";
@@ -291,7 +294,6 @@
 				081F2F03233FDE1200441649 /* MainView.xib in Resources */,
 				08E719D0233F984000CDE075 /* Assets.xcassets in Resources */,
 				08C4C6D9233FADC000F8E3E0 /* CardTableViewCell.xib in Resources */,
-				081F2F22234022E300441649 /* MainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +354,7 @@
 				081F2EFD233FD3C200441649 /* FPContentView.swift in Sources */,
 				081F2F11233FF25600441649 /* DetailView.swift in Sources */,
 				081F2F15233FFE9F00441649 /* OtherDetailViewController.swift in Sources */,
-				08C4C6CE233FAC1A00F8E3E0 /* MainTableViewController.swift in Sources */,
+				08C4C6CE233FAC1A00F8E3E0 /* DemoTableView.swift in Sources */,
 				081F2F07233FE7BC00441649 /* ModalViewController.swift in Sources */,
 				08E719E0233F9BEA00CDE075 /* MainViewModel.swift in Sources */,
 				081F2F1A233FFEDE00441649 /* OtherDetailView.swift in Sources */,
@@ -552,6 +554,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		084E66D0236603D2002CD72D /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SCENEE/FloatingPanel.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
 		0865FD032340D1B2009C1A03 /* XCRemoteSwiftPackageReference "Please" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/erikfloresq/Please.git";
@@ -560,25 +570,21 @@
 				minimumVersion = 0.0.3;
 			};
 		};
-		08E719DA233F9ADB00CDE075 /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/erikfloresq/Please";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.3;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		084E66D1236603D2002CD72D /* FloatingPanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 084E66D0236603D2002CD72D /* XCRemoteSwiftPackageReference "FloatingPanel" */;
+			productName = FloatingPanel;
+		};
 		0865FD042340D1B2009C1A03 /* Please */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0865FD032340D1B2009C1A03 /* XCRemoteSwiftPackageReference "Please" */;
 			productName = Please;
 		};
-		08E719DB233F9ADB00CDE075 /* FloatingPanel */ = {
+		08E719DB233F9ADB00CDE075 /* Please */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0863D84E234047080063B7A8 /* XCRemoteSwiftPackageReference "Please" */;
 			productName = Please;
 		};
 /* End XCSwiftPackageProductDependency section */
