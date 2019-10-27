@@ -31,6 +31,4 @@ class DemoTableView: UITableView {
         register(cardCell, forCellReuseIdentifier: "CardTableViewCell")
     }
 
-
-
 }
