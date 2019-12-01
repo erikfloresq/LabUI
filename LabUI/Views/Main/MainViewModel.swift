@@ -9,4 +9,7 @@
 import Foundation
 
 class MainViewModel {
+
+    var numbersItems = [1, 2, 1, 1, 1, 1]
+
 }

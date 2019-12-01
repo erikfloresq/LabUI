@@ -10,6 +10,8 @@ import UIKit
 
 class ItemCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var indexLabel: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }

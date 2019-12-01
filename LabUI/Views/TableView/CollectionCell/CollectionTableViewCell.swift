@@ -11,6 +11,7 @@ import UIKit
 class CollectionTableViewCell: UITableViewCell {
 
     @IBOutlet weak var demoCollectionView: DemoCollectionView!
+    var numberItems: Int = 0
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,27 +19,29 @@ class CollectionTableViewCell: UITableViewCell {
         demoCollectionView.dataSource = self
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func setup(numberItems: Int) {
+        self.numberItems = numberItems
     }
-    
+
 }
 
 extension CollectionTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return self.numberItems
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemCollectionViewCell", for: indexPath)
+        guard let itemCell = cell as? ItemCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        itemCell.indexLabel.text = "\(indexPath.row + 1)"
         return cell
     }
 }
 
 extension CollectionTableViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 250, height: 150)
+        return CGSize(width: collectionView.frame.width, height: 250)
     }
 }
